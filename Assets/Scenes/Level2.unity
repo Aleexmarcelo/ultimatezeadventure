@@ -8644,6 +8644,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4459864851310106426, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106429, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.05
@@ -9286,7 +9290,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28670
+  m_Name: pb_Mesh33458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16046,7 +16050,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8034fac68d78dcc418b15d20ac0bf5df, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.45
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16054,10 +16058,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 6.99
-  MaxDistance: 14.2
+  MinDistance: 0.8292422
+  MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -16072,6 +16076,24 @@ AudioSource:
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.40692362
+      value: 0.6957902
+      inSlope: 0.8770299
+      outSlope: 0.8770299
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.39051643
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.65547645
+      value: 0.4673428
+      inSlope: 2.685772
+      outSlope: 2.685772
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.44325384
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
@@ -16090,7 +16112,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
