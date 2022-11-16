@@ -265,9 +265,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PARABENS T\xC1? VOSE COMPLETO O JOGO!\nPENA QUE ADEQUERIL A VER\xC7\xC3O
-    INCOMPLETA FREE 0800 9090!\nADQIRA A VERS\xC3O COMPLETA EM BREVE POR 4.500.000.100,00
-    PESOS\nOU 2 REAIS"
+  m_text: "OBRIGADO POR JOGAR!\n\nAlex Marcelo\nBruna Borges\nDaniel Hiroshi\nMaria
+    Sabino\nStephany Sodr\xE9\n\nULTIMATE Z\xC9 ADVENTURE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
