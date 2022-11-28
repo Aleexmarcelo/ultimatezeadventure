@@ -7,29 +7,30 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public Animator animatorNPC;
-    //public Animator Thanks;
-   // public Animator Idle;
-   // public Animator Fome;
+    public AudioClip thanksSom;
 
     private void Start()
     {
         //Fome.SetTrigger("Fome");
-        animatorNPC.SetTrigger("Fome");
-        Debug.Log("Fome");
+        animatorNPC.SetBool("Fome",true);
+        animatorNPC.SetBool("Thanks", false);
+        animatorNPC.SetBool("Idle", false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Thanks();
-        
-        //  Thanks.SetTrigger("Thanks");
-        //Idle.SetTrigger("Idle");
+
+        animatorNPC.SetBool("Fome", false);
+        animatorNPC.SetBool("Thanks", true);
+        animatorNPC.SetBool("Idle", false);
+        AudioSource.PlayClipAtPoint(thanksSom, transform.position, 1);
     }
 
-    void Thanks()
+    private void OnTriggerExit(Collider other)
     {
-        animatorNPC.SetBool("Thanks", true);
-        //animatorNPC.SetTrigger("Thanks");
-        Debug.Log("Obrigado");
+        animatorNPC.SetBool("Thanks", false);
+        animatorNPC.SetBool("Fome", false);
+        animatorNPC.SetBool("Idle", true);
+
     }
 }
